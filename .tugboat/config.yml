@@ -78,6 +78,12 @@ services:
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
+  
+  #phpMyAdmin
+  phpmyadmin:
+    expose: 80
+    image: phpmyadmin/phpmyadmin
+
   mysql:
 
     # Use the latest available 5.x version of MySQL
